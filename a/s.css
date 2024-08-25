@@ -2,7 +2,7 @@ body {
 height: 100%;
 margin: 0;
 padding: 0;
-background: #bbb;
+background: #fff;
 background-image: url("i/.jpg");
 background-repeat: no-repeat;
 background-position: center;
@@ -39,11 +39,11 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 0;
 margin-bottom: 0;
-background-color: rgba(221, 221, 221, 1);
+background-color: rgba(0, 0, 0, 0.0);
 box-sizing: border-box;
 padding-left: 20px;
 padding-right: 20px;
-border: 2px solid #eee;
+border: 0px solid #eee;
 border-top: 0px;
 border-bottom: 0px;
 text-align: center;
@@ -133,53 +133,64 @@ border-radius: 25px;
 background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-  text-align: center;
+/* Style the floating logo */
+.floating-logo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 0 0 20px 0;
+    padding: 5px;
 }
 
-@media (min-width: 350px) {
-.slideshow-container {
-width: 350px;
-}
-}
-
-@media (max-width: 400px) {
-.slideshow-container {
-width: 400px;
-}
+.floating-logo ul {
+    list-style: none;
+    text-align: left;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  position: absolute;
-  width: auto;
-  padding-left: 28px;
-  padding-right: 28px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-align: center;
-margin-top: -33px;
+.floating-logo li {
+    margin-bottom: 5px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-	
-	/* Position the "prev button" to the right */
-.prev {
-  left: 0;
+.floating-logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.bottom {
-padding-bottom: 50px;
+.floating-logo a:hover {
+color: grey;
+}
+
+/* Style the floating social */
+.floating-social {
+    position: fixed;
+    bottom: 0px;
+ 	width: 100%;
+ 	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+    background-color: rgba(0, 0, 0, 1.0);
+    border-radius: 0 0 0 0;
+    padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.floating-social ul {
+    list-style: none;
+    text-align: left;
+}
+
+.floating-social li {
+    margin-bottom: 5px;
+}
+
+.floating-social a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.floating-social a:hover {
+color: grey;
 }
