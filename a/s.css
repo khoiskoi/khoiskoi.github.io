@@ -133,35 +133,6 @@ border-radius: 25px;
 background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Style the floating logo */
-.floating-logo {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.0);
-    border-radius: 0 0 20px 0;
-    padding: 5px;
-}
-
-.floating-logo ul {
-    list-style: none;
-    text-align: left;
-}
-
-.floating-logo li {
-    margin-bottom: 5px;
-}
-
-.floating-logo a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.floating-logo a:hover {
-color: grey;
-}
-
 /* Style the floating social */
 .floating-social {
     position: fixed;
